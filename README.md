@@ -28,7 +28,7 @@ Class `MapArray` is a dictionary that holds the frequencies of words, instead of
 
 Homework 9 implements containers with their iterators to work with the STL. Substituting your containers and iterators into your previously written `mapset.cpp` program demonstrates the interchangeability of implementations, and shows how the STL can be extended and customized.
 
-Homework 9 also provides one more opportunity to practice coding a singly-linked list 🙂 and to use an `std::vector`, which behaves much like an array, but can grow larger when necessary. Fluency in C++ programming with singly-linked list and with arrays is a prerequisite skill for ICS 46 Data Structures.
+Homework 9 also provides one more opportunity to practice coding a singly-linked list 🙂 and to use an `std::vector`, which behaves much like an array, but can grow larger when necessary. Fluency in C++ programming with singly-linked lists and with arrays is a prerequisite skill for ICS 46 Data Structures.
 
 ### Further Resources:
 
@@ -46,11 +46,11 @@ Homework 9 also provides one more opportunity to practice coding a singly-linked
 
 Class `SetList`, defined in a single file named `set_list.hpp`, is an STL template container that implements the functionality of `std::set` that you used in your own Homework 8.
 
-Class SetList is implemented as a singly-linked list of type T.
+Class `SetList` is implemented as a singly-linked list of type `T`.
 - `SetList` has one data member `head`, which is a [std::shared_ptr](https://www.youtube.com/watch?v=UOB7-B2MfwA) to a `ListNode`
 - `ListNode` must also be a template, to work with the template `SetList`.
 - `ListNode` must be nested inside `SetList`.
-- Each `ListNode` has data members data and next, as did your singly linked lists in previous Homeworks.
+- Each `ListNode` has data members `data` and `next`, as did your singly linked lists in previous Homeworks.
 
 Implement a class iterator inside class `SetList` that allows [forward iteration](https://cplusplus.com/reference/iterator/ForwardIterator/) through a `SetList`. It must satisfy the assertion
   `static_assert(std::forward_iterator<iterator>);`
@@ -76,7 +76,7 @@ The elements of `MapArray` must be `pair<Key,Value>`, where `Key` and `Value` ar
 An iterator inside class `MapArray` allows [random access](https://cplusplus.com/reference/iterator/RandomAccessIterator/) iteration through it.  It must satisfy the assertion  
   `static_assert(std::random_access_iterator<iterator>);`
 
-`std::map` stores items in a binary search tree, which keeps them in ascending alphabetical order by key; yours must keep them sorted as well, because mapset must print out the frequencies in order by key. Do not use `sort()`. Instead, keep the list in sorted order by inserting each new item in its proper place, so that the previous key is less than and the next key is greater than this key being inserted. Note that there is a useful STL algorithm for finding where to insert the new key. Find it and use it, but don’t tell anyone else what it is. Let everyone figure it out for themselves. 🙂
+`std::map` stores items in a binary search tree, which keeps them in ascending alphabetical order by key; yours must keep them sorted as well, because `mapset` must print out the frequencies in order by key. Do not use `sort()`. Instead, keep the list in sorted order by inserting each new item in its proper place, so that the previous key is less than and the next key is greater than this key being inserted. Note that there is a useful STL algorithm for finding where to insert the new key. Find it and use it, but don’t tell anyone else what it is. Let everyone figure it out for themselves. 🙂
 
 Note: a very similar container was added to the STL in C++23 under the name [std::flat_map](https://en.cppreference.com/w/cpp/container/flat_map).
 
@@ -128,7 +128,7 @@ mapset_main.cpp screenshot
 12. Define `operator []()` for `MapArray`. Remember, you must keep pairs in ascending order by key within this vector. For the first version, you may want to ignore this requirement, but you must do it eventually.
 13. Compile, making note of any errors due to missing methods on `MapArray`.
 14. Verify that MapArray stores pairs in ascending alphabetical order by key, so that when `mapset` prints output, the output will be in ascending alphabetical order. Verify the order before submitting to the autograder.
-15. Write and test the remaining methods given in the screenshot for MapArray and its iterator, incrementally developing and testing them.
+15. Write and test the remaining methods given in the screenshot for `MapArray` and its iterator, incrementally developing and testing them.
     
 ### Test, debug, and `valgrind`
 
