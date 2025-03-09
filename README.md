@@ -47,9 +47,13 @@ Homework 9 also provides one more opportunity to practice coding a singly-linked
 ### Further Resources:
 
 [set](https://en.cppreference.com/w/cpp/container/set)
+
 [map](https://en.cppreference.com/w/cpp/container/map)
+
 [iterator](https://en.cppreference.com/w/cpp/iterator/iterator)
+
 [iterator_traits](https://en.cppreference.com/w/cpp/iterator/iterator_traits)
+
 [vector](https://en.cppreference.com/w/cpp/container/vector)
 
 ## Organization of Classes and Files
