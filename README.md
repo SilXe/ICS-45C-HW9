@@ -46,15 +46,11 @@ Homework 9 also provides one more opportunity to practice coding a singly-linked
 
 ### Further Resources:
 
-[set](https://en.cppreference.com/w/cpp/container/set)
-
-[map](https://en.cppreference.com/w/cpp/container/map)
-
-[iterator](https://en.cppreference.com/w/cpp/iterator/iterator)
-
-[iterator_traits](https://en.cppreference.com/w/cpp/iterator/iterator_traits)
-
-[vector](https://en.cppreference.com/w/cpp/container/vector)
+- [set](https://en.cppreference.com/w/cpp/container/set)
+- [map](https://en.cppreference.com/w/cpp/container/map)
+- [iterator](https://en.cppreference.com/w/cpp/iterator/iterator)
+- [iterator_traits](https://en.cppreference.com/w/cpp/iterator/iterator_traits)
+- [vector](https://en.cppreference.com/w/cpp/container/vector)
 
 ## Organization of Classes and Files
 
@@ -112,7 +108,9 @@ Homework 9 `mapset_main` has the same functionality as in Homework 8, but uses y
 
 ### Sample input files for testing
 
-Sample input file `sample_doc.txt` and sample `stopwords.txt` are provided in this repo.
+Sample input file and stopwords can be found here:
+- [sample_doc.txt](https://ics.uci.edu/~klefstad/public/45c/sample_doc.txt) 
+- [stopwords.txt](https://ics.uci.edu/~klefstad/public/45c/stopwords.txt)
 
 > 💡*Tip: Remember the `Bash` command `diff` compares two files to see if they are the same or different:*
 > `diff fileA fileB`
